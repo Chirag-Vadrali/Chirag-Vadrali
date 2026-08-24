@@ -1,0 +1,14 @@
+{
+  "title": "Skill Radar",
+  "_comment": "PLACEHOLDER NUMBERS - these are inferred from the languages in your public repos, not from you. Edit them. Values are 0-100 and purely self-rated; 5-8 axes reads best.",
+  "axes": [
+    { "label": "PCB Design", "value": 90 },
+    { "label": "Embedded Systems", "value": 85 },
+    { "label": "Schematic Design", "value": 88 },
+    { "label": "C/C++", "value": 75 },
+    { "label": "SI/PI", "value": 72 },
+    { "label": "Power Electronics", "value": 75 },
+    { "label": "Hardware Debugging", "value": 80 },
+    { "label": "System Architecture", "value": 70 }
+  ]
+}

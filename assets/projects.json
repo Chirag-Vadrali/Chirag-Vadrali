@@ -1,0 +1,23 @@
+{
+  "_comment": "Featured repos, in README order. Star/fork/language come live from the API on every run; the description here overrides the repo's GitHub description. github_repo overrides which repository is queried for stars/forks.",
+  "projects": [
+    {
+      "repo": "ESP32_GUN_Mouse",
+      "description": "ESP32-based IoT motion-control system that uses an MPU6050 and Bluetooth HID to function as a wireless mouse."
+    },
+    {
+      "repo": "GPS",
+      "github_repo": "PCB_Designs",
+      "description": "Reverse-engineered a commercial GNSS/GPS module by recovering its schematic, component connectivity, RF front-end and PCB layout."
+    },
+    {
+      "repo": "ESP8266-Breakout-Board",
+      "github_repo": "PCB_Designs",
+      "description": "Standalone ESP8266 breakout board designed for embedded development with accessible GPIO, power and programming interfaces."
+    },
+    {
+      "repo": "MP3_tag_editor",
+      "description": "MP3 tag editing application for managing and modifying metadata embedded in audio files."
+    }
+  ]
+}
