@@ -50,7 +50,7 @@ Hi, I'm **Chirag S Vadrali**. I'm an Electronics & Communication Engineering stu
 
 ## `~/` toolbox
 
-<img src="https://skillicons.dev/icons?i=c,cpp,python,arduino,raspberrypi,linux,git,github,vscode,cmake&perline=10" alt="tech stack">
+<img src="https://skillicons.dev/icons?i=c,cpp,python,arduino,linux,git,github,vscode&perline=8" alt="tech stack">
 
 </div>
 
