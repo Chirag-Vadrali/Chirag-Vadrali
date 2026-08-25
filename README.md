@@ -63,7 +63,7 @@ Hi, I'm **Chirag S Vadrali**. I'm an Electronics & Communication Engineering stu
 
 <br>
 
-### 🛠️ Hardware & Systems Design Expertise
+## 🛠️ Hardware & Systems Design Expertise
 - **Hardware & Design Tools:** Altium Designer, KiCad, EasyEDA, LTspice (Schematic Design, PCB Layout, 4-Layer/Multilayer Design, DFM, DRC, Gerber Generation)
 - **High-Speed & Signal Integrity:** SI/PI (Signal/Power Integrity), 50Ω Controlled Impedance, Differential Pair Routing, Return-Path Analysis, Decoupling Networks, EMC/EMI, Crosstalk Mitigation
 - **Hardware Platforms & Microcontrollers:** ESP32, ESP8266, Arduino, Raspberry Pi, GNSS/NavIC GPS Module Reverse Engineering
@@ -85,6 +85,8 @@ Hi, I'm **Chirag S Vadrali**. I'm an Electronics & Communication Engineering stu
 </picture>
 
 <br>
+
+---
 
 <!-- Live radar built from real language byte counts across your repos -->
 <picture>
@@ -187,17 +189,6 @@ Hi, I'm **Chirag S Vadrali**. I'm an Electronics & Communication Engineering stu
     <img src="assets/card-MP3_tag_editor-dark.svg" width="100%" alt="MP3_tag_editor">
   </picture>
 </a>
-
-<sub>
-
-| project | live | stack |
-|---|---|---|
-| **[ESP32_GUN_Mouse](https://github.com/Chirag-Vadrali/ESP32_GUN_Mouse)** | [github.com](https://github.com/Chirag-Vadrali/ESP32_GUN_Mouse) | `ESP32` `C++` `Arduino IDE` `MPU6050` `BLE` |
-| **[GPS](https://github.com/Chirag-Vadrali/PCB_Designs)** | [github.com](https://github.com/Chirag-Vadrali/PCB_Designs) | `KiCad` `PCB Design` `GNSS/GPS` `RF` |
-| **[ESP8266-Breakout-Board](https://github.com/Chirag-Vadrali/PCB_Designs)** | [github.com](https://github.com/Chirag-Vadrali/PCB_Designs) | `KiCad` `ESP8266` `PCB Design` |
-| **[MP3_tag_editor](https://github.com/Chirag-Vadrali/MP3_tag_editor)** | [github.com](https://github.com/Chirag-Vadrali/MP3_tag_editor) | `Python` `MP3 Metadata` `Audio Processing` |
-
-</sub>
 
 </div>
 
