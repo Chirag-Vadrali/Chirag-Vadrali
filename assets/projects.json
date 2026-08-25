@@ -3,12 +3,12 @@
   "projects": [
     {
       "repo": "ESP32_GUN_Mouse",
-      "description": "ESP32-based IoT motion-control system that uses an MPU6050 and Bluetooth HID to function as a wireless mouse."
+      "description": "ESP32-based IoT motion-control system using MPU6050 + BLE HID. Achieves <10ms BLE latency as a fully wireless mouse. Open-source hardware and firmware."
     },
     {
       "repo": "GPS",
       "github_repo": "PCB_Designs",
-      "description": "Reverse-engineered a commercial GNSS/GPS module by recovering its schematic, component connectivity, RF front-end and PCB layout."
+      "description": "Reverse-engineered a commercial GNSS/GPS module — recovered full schematic, RF front-end topology, and PCB layout. Achieved 50Ω controlled impedance on RF traces."
     },
     {
       "repo": "ESP8266-Breakout-Board",
