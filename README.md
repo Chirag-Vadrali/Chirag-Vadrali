@@ -170,31 +170,28 @@ Hi, I'm **Chirag S Vadrali** — an **Electronics & Communication Engineer** pas
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/card-ESP32_GUN_Mouse-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/card-ESP32_GUN_Mouse-light.svg">
-    <img src="assets/card-ESP32_GUN_Mouse-dark.svg" width="100%" alt="ESP32_GUN_Mouse">
+    <img src="assets/card-ESP32_GUN_Mouse-dark.svg" width="49%" alt="ESP32_GUN_Mouse">
   </picture>
 </a>
-
 <a href="https://github.com/Chirag-Vadrali/PCB_Designs">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/card-GPS-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/card-GPS-light.svg">
-    <img src="assets/card-GPS-dark.svg" width="100%" alt="GPS">
+    <img src="assets/card-GPS-dark.svg" width="49%" alt="GPS">
   </picture>
 </a>
-
 <a href="https://github.com/Chirag-Vadrali/PCB_Designs">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/card-ESP8266-Breakout-Board-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/card-ESP8266-Breakout-Board-light.svg">
-    <img src="assets/card-ESP8266-Breakout-Board-dark.svg" width="100%" alt="ESP8266-Breakout-Board">
+    <img src="assets/card-ESP8266-Breakout-Board-dark.svg" width="49%" alt="ESP8266-Breakout-Board">
   </picture>
 </a>
-
 <a href="https://github.com/Chirag-Vadrali/MP3_tag_editor">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/card-MP3_tag_editor-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/card-MP3_tag_editor-light.svg">
-    <img src="assets/card-MP3_tag_editor-dark.svg" width="100%" alt="MP3_tag_editor">
+    <img src="assets/card-MP3_tag_editor-dark.svg" width="49%" alt="MP3_tag_editor">
   </picture>
 </a>
 
