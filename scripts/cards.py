@@ -251,6 +251,13 @@ def render_repo(repo, theme):
         f'fill="{c["title"]}">{esc(repo["name"])}</text>'
     )
 
+    # Optional "⭐ Featured" badge in the top-right corner
+    if repo.get("featured"):
+        out.append(
+            f'<text x="{W - pad}" y="{pad + 12}" font-size="10" text-anchor="end" '
+            f'fill="{c["accent"]}" font-weight="600">⭐ Featured</text>'
+        )
+
     desc = repo.get("description") or "No description yet."
     for i, line in enumerate(wrap(desc, 11.5, W - 2 * pad, 3)):
         out.append(
@@ -344,6 +351,7 @@ def main(argv=None):
             "language": entry.get("language") or src.get("language"),
             "stars": src["stargazers_count"],
             "forks": src["forks_count"],
+            "featured": entry.get("featured", False),
         }
         for theme in ("dark", "light"):
             dest = args.out / f"card-{entry['repo']}-{theme}.svg"

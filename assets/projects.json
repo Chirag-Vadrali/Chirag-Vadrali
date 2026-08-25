@@ -3,6 +3,7 @@
   "projects": [
     {
       "repo": "ESP32_GUN_Mouse",
+      "featured": true,
       "description": "ESP32-based IoT motion-control system using MPU6050 + BLE HID. Achieves <10ms BLE latency as a fully wireless mouse. Open-source hardware and firmware."
     },
     {
