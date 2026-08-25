@@ -88,7 +88,7 @@ Hi, I'm **Chirag S Vadrali** — an **Electronics & Communication Engineer** pas
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
-  <img src="assets/radar-dark.svg" width="100%" alt="skill radar chart">
+  <img src="assets/radar-dark.svg" width="480" alt="skill radar chart">
 </picture>
 
 <br>
@@ -99,7 +99,7 @@ Hi, I'm **Chirag S Vadrali** — an **Electronics & Communication Engineer** pas
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-langs-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-  <img src="assets/radar-langs-dark.svg" width="100%" alt="language radar chart">
+  <img src="assets/radar-langs-dark.svg" width="370" alt="language radar chart">
 </picture>
 
 </div>
@@ -204,7 +204,6 @@ Hi, I'm **Chirag S Vadrali** — an **Electronics & Communication Engineer** pas
 
 <div align="center">
 
-<sub>*Always learning, always building*</sub><br>
-<sub>*made with ☕ + oscilloscopes*</sub>
+<sub>*Always learning, always building*</sub>
 
 </div>
