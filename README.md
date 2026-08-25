@@ -39,11 +39,12 @@
 $ cat about.txt
 ```
 
-Hi, I'm **Chirag S Vadrali** — an Electronics & Communication Engineering student specialising in **PCB design, embedded systems, and hardware architecture**.
+Hi, I'm **Chirag S Vadrali** — an **Electronics & Communication Engineer** passionate about hardware design, embedded systems, and continuous learning. I love bringing ideas to life through PCB layout, digital design, and programming.
 
-- 🔧 Designing **multilayer PCBs** (KiCad, Altium) with SI/PI, controlled impedance & DFM — from schematic to Gerber
-- ⚡ Building **ESP32 / ESP8266** hardware systems with C/C++ firmware, BLE, SPI, I2C, UART
-- 🔭 Currently exploring **FPGAs and SoC board design**
+- **Core Focus:** PCB Designing, Embedded Systems & Digital Design
+- **Currently Improving:** Embedded C/C++ & Python programming skills
+- **Career Goal:** Open to opportunities in Hardware Engineering, Embedded Systems, and VLSI/Digital Design
+- **Hobbies:** Gaming | Music | Designing new concepts
 
 > 🌐 Portfolio: **[chirag-vadrali.github.io/portfolio](https://chirag-vadrali.github.io/portfolio/)**
 
@@ -63,6 +64,7 @@ Hi, I'm **Chirag S Vadrali** — an Electronics & Communication Engineering stud
 <img src="https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white" alt="KiCad">
 <img src="https://img.shields.io/badge/Altium_Designer-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white" alt="Altium Designer">
 <img src="https://img.shields.io/badge/LTspice-8A0000?style=for-the-badge&logo=analog-devices&logoColor=white" alt="LTspice">
+<img src="https://img.shields.io/badge/Keil_uVision-0091BD?style=for-the-badge&logo=arm&logoColor=white" alt="Keil uVision">
 
 </div>
 
@@ -202,6 +204,7 @@ Hi, I'm **Chirag S Vadrali** — an Electronics & Communication Engineering stud
 
 <div align="center">
 
+<sub>*Always learning, always building*</sub><br>
 <sub>*made with ☕ + oscilloscopes*</sub>
 
 </div>
