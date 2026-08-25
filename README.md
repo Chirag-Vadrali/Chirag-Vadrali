@@ -173,11 +173,11 @@ Hi, I'm **Chirag S Vadrali** — an **Electronics & Communication Engineer** pas
     <img src="assets/card-ESP32_GUN_Mouse-dark.svg" width="49%" alt="ESP32_GUN_Mouse">
   </picture>
 </a>
-<a href="https://github.com/Chirag-Vadrali/PCB_Designs">
+<a href="https://github.com/Chirag-Vadrali/ASTRA-NAV-M9-Reverse-Engineered">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="assets/card-GPS-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/card-GPS-light.svg">
-    <img src="assets/card-GPS-dark.svg" width="49%" alt="GPS">
+    <source media="(prefers-color-scheme: dark)"  srcset="assets/card-ASTRA-NAV-M9-Reverse-Engineered-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/card-ASTRA-NAV-M9-Reverse-Engineered-light.svg">
+    <img src="assets/card-ASTRA-NAV-M9-Reverse-Engineered-dark.svg" width="49%" alt="ASTRA-NAV-M9-Reverse-Engineered">
   </picture>
 </a>
 <a href="https://github.com/Chirag-Vadrali/PCB_Designs">

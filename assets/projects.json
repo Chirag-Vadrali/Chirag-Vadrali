@@ -7,9 +7,8 @@
       "description": "ESP32-based IoT motion-control system using MPU6050 + BLE HID. Achieves <10ms BLE latency as a fully wireless mouse. Open-source hardware and firmware."
     },
     {
-      "repo": "GPS",
-      "github_repo": "PCB_Designs",
-      "description": "Reverse-engineered a commercial GNSS/GPS module — recovered full schematic, RF front-end topology, and PCB layout. Achieved 50Ω controlled impedance on RF traces."
+      "repo": "ASTRA-NAV-M9-Reverse-Engineered",
+      "description": "Reverse-engineered GNSS receiver board centered on the u-blox NEO-M9N module with RF matching, power path, and KiCad PCB layout."
     },
     {
       "repo": "ESP8266-Breakout-Board",
