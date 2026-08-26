@@ -181,9 +181,11 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
 
     pad = 10
     title_h = TTL + 14 if title else 0
-    W = round((maxx - minx) + 2 * pad)
+    max_half_width = max(abs(minx), abs(maxx))
+    W = round(2 * max_half_width + 2 * pad)
     H = round((maxy - miny) + 2 * pad + title_h)
-    ox, oy = -minx + pad, -miny + pad + title_h
+    ox = max_half_width + pad
+    oy = -miny + pad + title_h
 
     # A long title ("<user> · language mix") can be wider than the chart itself.
     # Widen the canvas and re-centre the chart inside it rather than clipping.
