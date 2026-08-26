@@ -82,24 +82,20 @@ Hi, I'm **Chirag S Vadrali** — an **Electronics & Communication Engineer** pas
 
 <div align="center">
 
-## `~/` skill radar
+## `~/` language mix & skill radar
 
-<!-- Self-rated radar - edit assets/skills.json, the workflow redraws it -->
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
-  <img src="assets/radar-dark.svg" width="480" alt="skill radar chart">
-</picture>
-
-<br>
-
----
-
-<!-- Live radar built from real language byte counts across your repos -->
+<!-- Live radar built from real language byte counts across your repos (left) -->
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-langs-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-  <img src="assets/radar-langs-dark.svg" width="370" alt="language radar chart">
+  <img src="assets/radar-langs-dark.svg" width="370" alt="Chirag-Vadrali · language mix">
+</picture>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- Self-rated skill bars - edit assets/skills.json, the workflow redraws it (right) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
+  <img src="assets/radar-dark.svg" width="370" alt="skill radar">
 </picture>
 
 </div>

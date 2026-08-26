@@ -262,6 +262,99 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
     return "".join(parts)
 
 
+def render_bars(title, axes, theme: str, size: int, animate: bool) -> str:
+    c = THEMES[theme]
+    n = len(axes)
+    
+    W = max(480, size)
+    H = 540  # Keep height fixed at 540 to match the radar chart height
+    
+    # Calculate dimensions based on W
+    bar_x = max(180, int(W * 0.38))
+    bar_w = W - bar_x - 60
+    
+    title_h = TTL + 14 if title else 0
+    
+    start_y = title_h + 40
+    end_y = H - 40
+    
+    if n > 1:
+        dy = (end_y - start_y) / (n - 1)
+    else:
+        dy = 0
+        
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
+        f'width="{W}" height="{H}" role="img" '
+        f'aria-label="{esc(title) or "skill bars"}" font-family="{FONT}">'
+    ]
+    if c["bg"] != "none":
+        parts.append(f'<rect width="100%" height="100%" fill="{c["bg"]}"/>')
+        
+    if title:
+        parts.append(
+            f'<text x="{W / 2:.1f}" y="{25:.0f}" text-anchor="middle" '
+            f'font-size="{TTL}" font-weight="700" fill="{c["title"]}">'
+            f'{esc(title)}</text>'
+        )
+        
+    for i, (label, val) in enumerate(axes):
+        item_y = start_y + i * dy
+        val = max(0.0, min(100.0, val))
+        filled_w = bar_w * (val / 100.0)
+        
+        display_label = f"{label}:"
+        parts.append(
+            f'<text x="{bar_x - 15}" y="{item_y + 4}" text-anchor="end" '
+            f'font-size="{LBL}" font-weight="600" fill="{c["label"]}">'
+            f'{esc(display_label)}</text>'
+        )
+        
+        # Track background (unfilled)
+        parts.append(
+            f'<rect x="{bar_x}" y="{item_y - 6}" width="{bar_w}" height="12" rx="6" ry="6" '
+            f'fill="{c["grid"]}"/>'
+        )
+        
+        # Filled part
+        if animate:
+            parts.append(
+                f'<rect x="{bar_x}" y="{item_y - 6}" width="0" height="12" rx="6" ry="6" fill="{c["fill"]}">'
+                f'<animate attributeName="width" from="0" to="{filled_w:.1f}" dur="1.1s" '
+                f'calcMode="spline" keyTimes="0;1" keySplines="0.22 1 0.36 1" fill="freeze"/>'
+                f'</rect>'
+            )
+        else:
+            parts.append(
+                f'<rect x="{bar_x}" y="{item_y - 6}" width="{filled_w:.1f}" height="12" rx="6" ry="6" fill="{c["fill"]}"/>'
+            )
+            
+        # Knob/Handle
+        thumb_x = bar_x + filled_w
+        if animate:
+            parts.append(
+                f'<rect x="{bar_x - 5}" y="{item_y - 9}" width="10" height="18" rx="3" ry="3" '
+                f'fill="#ffffff" stroke="{c["stroke"]}" stroke-width="1.5">'
+                f'<animate attributeName="x" from="{bar_x - 5}" to="{thumb_x - 5:.1f}" dur="1.1s" '
+                f'calcMode="spline" keyTimes="0;1" keySplines="0.22 1 0.36 1" fill="freeze"/>'
+                f'</rect>'
+            )
+        else:
+            parts.append(
+                f'<rect x="{thumb_x - 5:.1f}" y="{item_y - 9}" width="10" height="18" rx="3" ry="3" '
+                f'fill="#ffffff" stroke="{c["stroke"]}" stroke-width="1.5"/>'
+            )
+            
+        # Percentage text on the right (left-aligned)
+        parts.append(
+            f'<text x="{bar_x + bar_w + 15}" y="{item_y + 4}" text-anchor="start" '
+            f'font-size="{VAL}" fill="{c["value"]}">{val:g}%</text>'
+        )
+        
+    parts.append("</svg>")
+    return "".join(parts)
+
+
 def esc(s: str) -> str:
     return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
@@ -279,6 +372,8 @@ def main(argv=None):
     p.add_argument("-o", "--out", type=Path, default=Path("assets/radar"),
                    help="output path WITHOUT extension")
     p.add_argument("--title", help="override the chart title ('' for none)")
+    p.add_argument("--type", choices=["radar", "bars"], default="radar",
+                   help="type of chart to render: radar or bars")
     p.add_argument("--size", type=int, default=440)
     p.add_argument("--rings", type=int, default=4)
     p.add_argument("--limit", type=int, default=7,
@@ -304,13 +399,16 @@ def main(argv=None):
 
     if args.title is not None:
         title = args.title
-    if len(axes) < 3:
+    if args.type == "radar" and len(axes) < 3:
         sys.exit("a radar chart needs at least 3 axes")
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     for theme in ("dark", "light"):
-        svg = render(title, axes, theme, args.size, args.rings, args.values,
-                     args.animate)
+        if args.type == "bars":
+            svg = render_bars(title, axes, theme, args.size, args.animate)
+        else:
+            svg = render(title, axes, theme, args.size, args.rings, args.values,
+                         args.animate)
         dest = args.out.with_name(f"{args.out.name}-{theme}.svg")
         dest.write_text(svg, encoding="utf-8")
         print(f"wrote {dest}  ({len(axes)} axes)")

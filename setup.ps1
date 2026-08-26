@@ -59,7 +59,7 @@ if ($Name) {
 }
 
 Write-Host "`n[2/3] drawing the skill radar" -ForegroundColor Cyan
-python (Join-Path $root 'scripts\radar.py') --data (Join-Path $root 'assets\skills.json') -o (Join-Path $root 'assets\radar')
+python (Join-Path $root 'scripts\radar.py') --data (Join-Path $root 'assets\skills.json') -o (Join-Path $root 'assets\radar') --type bars
 
 if ($Username) {
     Write-Host "      drawing the language radar from the GitHub API" -ForegroundColor Cyan
